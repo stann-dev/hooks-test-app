@@ -1,0 +1,16 @@
+@import "./../../constants/uiConstants";
+
+.text-with-label {
+    padding: 10px 0;
+
+    .label {
+        font-size: $font-small;
+        font-weight:600;
+        color:rgba($primary-color, 0.3);
+        text-transform: uppercase;
+    }
+
+    .text {
+        font-size: $font-medium;
+    }
+}

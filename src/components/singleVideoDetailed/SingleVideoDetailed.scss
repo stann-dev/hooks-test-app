@@ -1,0 +1,48 @@
+@import "./../../constants/uiConstants";
+
+.single-video-detailed {
+    width: 1200px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    background: $tetrary-color;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .single-video-detailed__cover {
+        width: 200px;
+        position: relative;
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .img-placeholder {
+            width: 100%;
+            height: 250px;
+            border-radius:5px;
+        }
+
+        .img-loader {
+            background: transparent;
+        }
+    }
+
+    .details {
+        margin-left: 40px;
+        flex: 1;
+        max-width: calc(100% - 240px);
+
+        .details__title {
+            font-weight: 600;
+            font-size: $font-big;
+        }
+
+        .details__rest {
+
+        }
+    }
+
+}

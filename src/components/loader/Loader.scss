@@ -1,0 +1,37 @@
+@import "./../../constants/uiConstants";
+
+.loader{
+    width:100%;
+    min-height:100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    .loader__inner{
+        width:30px;
+        height:30px;
+        animation: spinMe 1s ease-in-out infinite;
+
+        &::before, &::after{
+            content: '';
+            display:block;
+            border-radius:3px;
+            width:10px;
+            height:10px;
+            background:$primary-color;
+            top:calc(50% - 5px);
+            position:absolute;
+        }
+
+        &::after{
+            right:0;
+        }
+
+
+        @keyframes spinMe {
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

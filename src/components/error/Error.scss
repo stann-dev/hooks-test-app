@@ -1,0 +1,9 @@
+@import "./../../constants/uiConstants";
+
+.error{
+    color: $tetrary-color;
+    background: $error-color;
+    border-radius:5px;
+    padding:5px 20px;
+    font-size: $font-medium;
+}

@@ -1,0 +1,35 @@
+.movies-search-panel {
+    display: flex;
+    width: 1200px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+
+    .logo-area {
+        width: 400px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        img {
+            width: 200px;
+            max-width: 100%;
+        }
+    }
+
+    .search-area {
+        width: 400px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .view-area {
+        display: flex;
+        justify-content: center;
+    }
+}

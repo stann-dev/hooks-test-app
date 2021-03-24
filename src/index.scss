@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+@import "./constants/uiConstants";
+
+* {
+    font-family: 'Montserrat', sans-serif;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+body {
+    background: rgba($primary-color, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+
+#root{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+}
+
+.App{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    width:100%;
+    min-height:100%;
+}

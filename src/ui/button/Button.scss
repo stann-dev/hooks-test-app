@@ -1,0 +1,22 @@
+@import "./../../constants/uiConstants";
+
+.buttonbox {
+    display: flex;
+
+    button, a {
+        background: $primary-color;
+        color: $tetrary-color;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 12px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+
+        &:hover {
+            background: $secondary-color;
+        }
+    }
+}

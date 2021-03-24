@@ -1,0 +1,97 @@
+@import "./../../constants/uiConstants";
+
+.single-video {
+    width: 230px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba($primary-color, 0.15);
+    transition: all 0.25s ease-in-out;
+    transition-property: box-shadow, transform;
+
+    &:hover{
+        box-shadow: 0 0 30px rgba($primary-color, 0.3);
+        transform: scale(1.05);
+    }
+
+    .single-video__cover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height:100%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .img-placeholder{
+            width:100%;
+            height:100%;
+        }
+    }
+
+    .single-video__details {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(0deg, rgba($primary-color, 0.85), rgba($primary-color, 0.65), rgba($primary-color, 0));
+        box-sizing: border-box;
+        padding: 0 15px 10px 15px;
+
+        .single-video__title {
+            color: $tetrary-color;
+            font-weight: 600;
+            font-size: $font-medium;
+            background: rgba($primary-color, 0.9);
+            border-radius:100px;
+            padding:5px 10px;
+            margin-bottom:5px;
+            text-align: center;
+        }
+
+        .single-video__important-details {
+            display: flex;
+            justify-content: center;
+            opacity:0.8;
+
+            .single-video__runtime {
+                color: $tetrary-color;
+                font-size: $font-small;
+                margin-right:10px;
+            }
+
+            .single-video__genre {
+                color: $tetrary-color;
+                font-size: $font-small
+            }
+        }
+
+        .single-video__other-details{
+            display:flex;
+            justify-content: center;
+            opacity: 0.8;
+
+            .single-video__director{
+                color:$tetrary-color;
+                font-size:$font-small;
+                margin-right:10px;
+            }
+            .single-video__country{
+                color:$tetrary-color;
+                font-size:$font-small;
+            }
+        }
+    }
+}

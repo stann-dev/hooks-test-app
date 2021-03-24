@@ -1,0 +1,29 @@
+@import "./../../constants/uiConstants";
+
+.inputbox {
+    width: 100%;
+    display: flex;
+
+    &:hover {
+        input {
+            border-color: rgba($primary-color, 0.2);
+        }
+    }
+
+    input {
+        border: 1px solid rgba($primary-color, 0.1);
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: 100%;
+        color: $primary-color;
+
+        &:focus{
+            border-color:$primary-color;
+        }
+
+        &::placeholder {
+            color: rgba($primary-color, 0.5);
+        }
+    }
+}
+

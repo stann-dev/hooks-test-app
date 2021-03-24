@@ -1,0 +1,21 @@
+@import "./../../constants/uiConstants";
+
+.img-placeholder {
+    background: rgba($primary-color, 0.9);
+    color: rgba($tetrary-color, 0.4);
+    text-transform: uppercase;
+    font-size: $font-small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+.img-loader{
+    background:rgba($primary-color, 0.2);
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

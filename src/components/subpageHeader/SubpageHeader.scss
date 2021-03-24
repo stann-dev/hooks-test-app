@@ -1,0 +1,17 @@
+@import "./../../constants/uiConstants";
+
+.subpageHeader {
+    display: flex;
+    padding:10px;
+
+    .logo-container{
+        flex:1;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 100px;
+        }
+    }
+}

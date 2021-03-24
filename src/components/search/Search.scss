@@ -1,0 +1,18 @@
+@import "./../../constants/uiConstants";
+
+.searchbox{
+    display:flex;
+    width:400px;
+    max-width:100%;
+
+    .inputbox{
+        input {
+            border-radius: 5px 0 0 5px;
+        }
+    }
+    .buttonbox{
+        button{
+            border-radius: 0 5px 5px 0;
+        }
+    }
+}
